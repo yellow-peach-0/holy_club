@@ -15,18 +15,15 @@ type Tab = 'home' | 'word' | 'prayer' | 'media'
 
 function AppContent() {
   const [activeTab, setActiveTab] = useState<Tab>('home')
-  const [showOnboarding, setShowOnboarding] = useState(false)
   const [showGoalModal, setShowGoalModal] = useState(false)
   const [mounted, setMounted] = useState(false)
 
-  const setupDone = useStore((s) => s.setupDone)
+  const userId = useStore((s) => s.userId)
+  const nickname = useStore((s) => s.nickname)
 
   useEffect(() => {
     setMounted(true)
-    if (!setupDone) {
-      setShowOnboarding(true)
-    }
-  }, [setupDone])
+  }, [])
 
   const handleTabChange = (tab: Tab) => {
     setActiveTab(tab)
