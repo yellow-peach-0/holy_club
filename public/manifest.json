@@ -1,0 +1,19 @@
+{
+  "name": "Holy Club",
+  "short_name": "Holy Club",
+  "description": "하나님과 가까워지는 매일의 경건 생활 앱",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#7C3AED",
+  "background_color": "#F5F3FF",
+  "lang": "ko",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
